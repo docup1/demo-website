@@ -1,0 +1,113 @@
+:root {
+  --vp-c-brand-1: #1d6b3c;
+  --vp-c-brand-2: #26834a;
+  --vp-c-brand-3: #2f9a59;
+  --vp-c-brand-soft: rgba(45, 154, 89, 0.14);
+}
+
+.dark {
+  --vp-c-brand-1: #4cc37e;
+  --vp-c-brand-2: #3cb06d;
+  --vp-c-brand-3: #2f9a59;
+  --vp-c-brand-soft: rgba(76, 195, 126, 0.16);
+}
+
+.vp-doc .price-form {
+  margin: 24px 0;
+  padding: 28px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  background: var(--vp-c-bg-soft);
+}
+
+.price-form__title {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+  line-height: 1.3;
+  color: var(--vp-c-text-1);
+}
+
+.price-form__subtitle {
+  margin: 0 0 20px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--vp-c-text-2);
+}
+
+.price-form__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.price-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.price-form__field--wide {
+  grid-column: 1 / -1;
+}
+
+.price-form__label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+}
+
+.price-form__input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 0.95rem;
+  color: var(--vp-c-text-1);
+  background: var(--vp-c-bg);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  transition: border-color 0.2s;
+}
+
+.price-form__input:focus {
+  outline: none;
+  border-color: var(--vp-c-brand-1);
+}
+
+.price-form__textarea {
+  resize: vertical;
+  font-family: inherit;
+}
+
+.price-form__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.price-form__submit {
+  align-self: flex-start;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--vp-c-brand-1);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.price-form__submit:hover {
+  background: var(--vp-c-brand-2);
+}
+
+.price-form__note {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--vp-c-brand-1);
+}
+
+.price-form__hint {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--vp-c-text-2);
+}
