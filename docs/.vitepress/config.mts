@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig, withBase } from 'vitepress'
 
 export default defineConfig({
   base: process.env.VITEPRESS_BASE || '/',
@@ -8,7 +8,7 @@ export default defineConfig({
   cleanUrls: true,
 
   head: [
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: withBase('/favicon.svg') }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:title', content: 'ООО «ИССИТ» — кормовые концентраты для сельского хозяйства' }],
     ['meta', { property: 'og:description', content: 'БиоГард, ГлюкаСол ПРО, ГлюкаСол Баланс, СорбДиар, Лизунец ПроВит, ПроБуфф. Производство — Республика Беларусь. Оптовые поставки по РФ.' }]
